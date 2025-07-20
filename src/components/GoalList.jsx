@@ -1,7 +1,7 @@
 // src/components/GoalList.js
 import React, { useState } from 'react';
 import GoalItem from './GoalItem';
-// import './GoalList.css';
+import './GoalList.css';
 
 function GoalList({ goals, onUpdateGoal, onDeleteGoal, onAddDeposit }) {
   const [editingId, setEditingId] = useState(null);

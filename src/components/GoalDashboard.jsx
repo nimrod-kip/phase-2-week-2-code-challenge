@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import GoalOverview from './GoalOverview';
 import GoalList from './GoalList';
 import AddGoalForm from './AddGoalForm';
-// import './GoalDashboard.css';
+import './GoalDashboard.css';
 
 const API_URL = 'http://localhost:3000/goals';
 

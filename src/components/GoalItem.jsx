@@ -1,6 +1,6 @@
 // src/components/GoalItem.js
 import React, { useState } from 'react';
-// import './GoalItem.css';
+import './GoalItem.css';
 
 function GoalItem({ 
   goal, 

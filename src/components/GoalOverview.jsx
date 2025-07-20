@@ -1,6 +1,6 @@
 // src/components/GoalOverview.js
 import React from 'react';
-// import './GoalOverview.css';
+import './GoalOverview.css';
 
 function GoalOverview({ goals }) {
   // Calculate statistics

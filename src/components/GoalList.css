@@ -1,0 +1,27 @@
+
+.goal-list {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .goal-list h2 {
+    margin-top: 0;
+    color: #1a73e8;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.8rem;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #5f6368;
+  }
+  
+  .goals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }

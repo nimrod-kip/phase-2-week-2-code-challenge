@@ -1,6 +1,6 @@
 // src/components/AddGoalForm.js
 import React, { useState } from 'react';
-// import './AddGoalForm.css';
+import './AddGoalForm.css';
 
 function AddGoalForm({ onAddGoal }) {
   const [formData, setFormData] = useState({
