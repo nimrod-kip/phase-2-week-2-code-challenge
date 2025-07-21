@@ -5,7 +5,7 @@ import GoalList from './GoalList';
 import AddGoalForm from './AddGoalForm';
 import './GoalDashboard.css';
 
-const API_URL = 'http://localhost:3000/goals';
+const API_URL = 'https://phase-2-week-2-code-challenge-6yih.vercel.app/goals';
 
 function GoalDashboard() {
   const [goals, setGoals] = useState([]);
