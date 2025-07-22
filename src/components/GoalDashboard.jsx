@@ -1,11 +1,11 @@
-// src/components/GoalDashboard.js
+
 import React, { useState, useEffect } from 'react';
 import GoalOverview from './GoalOverview';
 import GoalList from './GoalList';
 import AddGoalForm from './AddGoalForm';
 import './GoalDashboard.css';
 
-const API_URL = 'https://phase-2-week-2-code-challenge-6yih.vercel.app/goals';
+const API_URL = 'http://localhost:3000/goals';
 
 function GoalDashboard() {
   const [goals, setGoals] = useState([]);
@@ -13,7 +13,7 @@ function GoalDashboard() {
   const [error, setError] = useState(null);
   const [showAddForm, setShowAddForm] = useState(false);
 
-  // Fetch goals from the API
+  
   useEffect(() => {
     const fetchGoals = async () => {
       try {
@@ -33,7 +33,7 @@ function GoalDashboard() {
     fetchGoals();
   }, []);
 
-  // Add a new goal
+  
   const addGoal = async (newGoal) => {
     try {
       const response = await fetch(API_URL, {
@@ -60,7 +60,7 @@ function GoalDashboard() {
     }
   };
 
-  // Update an existing goal
+  
   const updateGoal = async (id, updatedData) => {
     try {
       const response = await fetch(`${API_URL}/${id}`, {
@@ -82,7 +82,7 @@ function GoalDashboard() {
     }
   };
 
-  // Delete a goal
+  
   const deleteGoal = async (id) => {
     try {
       const response = await fetch(`${API_URL}/${id}`, {
@@ -99,7 +99,7 @@ function GoalDashboard() {
     }
   };
 
-  // Add a deposit to a goal
+  
   const addDeposit = async (id, amount) => {
     try {
       const goal = goals.find(g => g.id === id);
